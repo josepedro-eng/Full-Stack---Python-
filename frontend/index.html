@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Tarefas</h1>
+
+        <section>
+            <h2>Novo Usuário</h2>
+            <input type="text" id="nome" placeholder="Nome Completo">
+            <input type="email" id="email" placeholder="E-mail">
+            <button id="btnCriarUsuario">Criar Usuário</button>
+        </section>
+
+        <section>
+            <h2>Usuários Cadastrados</h2>
+            <ul id="listaUsuarios"></ul>
+        </section>
+
+        <section>
+            <h2>Nova Tarefa</h2>
+            <input type="text" id="tituloTarefa" placeholder="Título da Tarefa">
+            <input type="text" id="descricaoTarefa" placeholder="Descrição Detalhada">
+            <input type="number" id="usuarioIdTarefa" placeholder="ID do Usuário Responsável">
+            <button id="btnCriarTarefa">Criar Tarefa</button>
+        </section>
+
+        <section>
+            <h2>Tarefas Ativas</h2>
+            <ul id="listaTarefas"></ul>
+        </section>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
